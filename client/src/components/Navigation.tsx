@@ -20,7 +20,7 @@ export default function Navigation() {
     { href: "/", label: "Home", isRoute: true },
     { href: "/services", label: "Services", isRoute: true },
     { href: "/gallery", label: "Gallery", isRoute: true },
-    { href: "#about", label: "About", isRoute: false }
+    { href: "#about", label: "About Us", isRoute: false }
   ];
 
   return (
