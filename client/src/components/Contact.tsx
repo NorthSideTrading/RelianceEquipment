@@ -1,7 +1,7 @@
 import { Phone, MapPin, Clock, ExternalLink, AlertTriangle } from "lucide-react";
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
-import firetruckPanaImg from "@assets/firetruckpana (1).jpg";
+import firetruckPanaImg from "@assets/firetruckpana.jpg";
 
 export default function Contact() {
   const contactItems = [
@@ -65,7 +65,7 @@ export default function Contact() {
       {/* Contact Section with Background Image */}
       <section 
         id="contact" 
-        className="py-20 relative parallax"
+        className="py-20 relative bg-cover bg-center bg-no-repeat"
         style={{ backgroundImage: `url(${firetruckPanaImg})` }}
       >
         {/* Overlay */}
