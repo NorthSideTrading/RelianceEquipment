@@ -1,6 +1,7 @@
 import { ChevronDown, Phone, Eye } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { motion } from "framer-motion";
+import { Link } from "wouter";
 import firetruckClassicImg from "@assets/firetruckclassic.jpg";
 
 export default function Hero() {
@@ -93,10 +94,10 @@ export default function Hero() {
                 size="lg"
                 className="bg-yellow-500/20 hover:bg-yellow-500/30 text-white border-yellow-400/50 px-8 py-4 text-lg font-bold hover-lift backdrop-blur-sm"
               >
-                <a href="#services">
+                <Link href="/gallery">
                   <Eye className="h-5 w-5 mr-2" />
                   View Our Work
-                </a>
+                </Link>
               </Button>
             </motion.div>
           </motion.div>
