@@ -99,7 +99,7 @@ export default function About() {
         >
           <div className="grid md:grid-cols-3 gap-8 items-center">
             <div className="md:col-span-2">
-              <h3 className="text-3xl font-bold text-gray-900 mb-4">Family Tradition Continues</h3>
+              <h3 className="text-3xl font-bold text-gray-900 mb-4"><span className="text-red-600">Family</span> Tradition Continues</h3>
               <p className="text-lg text-gray-600 mb-6">
                 Reliance Equipment isn't just a business—it's a family tradition of service to our community's first responders. 
                 We take pride in the relationships we've built with fire departments throughout Maine over the past four decades.
