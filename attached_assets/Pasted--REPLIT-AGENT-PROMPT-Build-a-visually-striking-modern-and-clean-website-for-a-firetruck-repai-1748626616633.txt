@@ -1,0 +1,99 @@
+🚨 REPLIT AGENT PROMPT 🚨
+Build a visually striking, modern, and clean website for a firetruck repair and maintenance business called Reliance Equipment.
+
+🛠 GENERAL SITE STRUCTURE
+Three main pages: Home, Services, and About
+
+Clean, professional layout using a fire/rescue-themed color scheme: deep red, black, chrome/silver, and white
+
+Subtle but unique visual touches: icons, SVGs, or animations related to mechanical repair, firetrucks, and tools (e.g. gears turning, hose nozzle icons, firetruck silhouette line art)
+
+Font style should feel industrial yet approachable — bold headers, clean sans-serif body text
+
+Responsive design for desktop and mobile
+
+🧭 NAVIGATION
+Create a sticky header with the brand name/logo on the left and nav links: Home | Services | About on the right. Add a “Contact Us” call-to-action button.
+
+🏠 HOME PAGE
+🔥 Hero Section
+Large banner featuring the image firetruckclassic.jpg
+
+Overlay text:
+"Complete Fire Apparatus Repair & Maintenance"
+Subtext: Serving Departments Since 1982 with Trusted Expertise
+Button: [Request Service]
+
+🔧 What We Do (2-column section)
+Left: text content about services (see below)
+
+Right: place tradeshow.jpg image
+
+🚨 Live Action Section
+Full-width, dynamic photo display of firetrucks in action using:
+
+firetruckwater.jpg
+
+firetruckwater2.jpg
+
+firetruckscene.jpg
+
+Use a carousel or image gallery
+
+💬 Testimonial / Human Touch
+Use firetruckbaby.jpg to create a human, heartfelt moment
+Text overlay:
+“We keep the wheels turning so the next generation stays safe.”
+
+🧰 SERVICES PAGE
+List each core offering in its own card section with subtle animations:
+
+Pump Overhaul & Testing
+
+Preventative Maintenance
+
+Tanker & Engine Service
+
+On-Site Diagnostics
+
+Emergency Repairs
+
+Apparatus Customization
+
+Include a strong call-to-action at bottom:
+“Need Your Truck Running Like New? Contact Us Today.”
+
+Visual section break: use firetrucks.jpg background with parallax scroll or dimmed overlay
+
+👷 ABOUT PAGE
+Tell the story of Reliance Equipment — founded in 1982 in Vassalboro, Maine, trusted by departments across the Northeast.
+
+Highlight veteran team, technical experience, and unmatched service reputation.
+
+Use:
+
+firetruck1.jpg and firetruck2.jpg — place one near the top and one mid-page
+
+End the page with firetruckpana.jpg as a full-width footer background image with logo + quote overlay:
+
+“When your trucks can’t fail, trust the team that never does.”
+
+📞 FOOTER
+Include:
+
+Facebook icon linking to: https://www.facebook.com/RelianceEquipment/
+
+Phone: (207) 626-0075
+
+Address: Vassalboro, ME
+
+“EST. 1982” fire department badge icon
+
+Use firetruckpana.jpg in the footer as background
+
+💡EXTRAS
+Add smooth scroll and subtle hover effects
+
+Include a favicon with a wrench or fire icon
+
+Consider adding a tiny animated wrench turning on load or loading bar styled like a firetruck light
