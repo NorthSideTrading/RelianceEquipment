@@ -7,7 +7,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import firetruckWater2Img from "@assets/firetruckwater2.jpg";
 import firetruckWaterImg from "@assets/firetruckwater.jpg";
 import firetruck2Img from "@assets/firetruck2.jpg";
-import firetruck1Img from "@assets/firetruck1.jpg";
+import oldTruckServiceImg from "@assets/oldtruckservice.jpg";
 import firetruckWater3Img from "@assets/firetruckwater3.jpg";
 
 export default function PhotoGallery() {
@@ -30,8 +30,8 @@ export default function PhotoGallery() {
       title: "Expert Repairs"
     },
     {
-      src: firetruck1Img,
-      alt: "Falmouth West Station fire truck elevated for maintenance work in service bay",
+      src: oldTruckServiceImg,
+      alt: "Vintage fire truck elevated on professional hydraulic lift in service bay with red Mohawk equipment",
       title: "Professional Service"
     },
     {
@@ -101,7 +101,7 @@ export default function PhotoGallery() {
                 <img
                   src={images[currentSlide].src}
                   alt={images[currentSlide].alt}
-                  className="w-full h-96 md:h-[500px] object-cover"
+                  className="w-full h-96 md:h-[500px] object-contain bg-gray-100"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent">
                   <div className="absolute bottom-6 left-6">
