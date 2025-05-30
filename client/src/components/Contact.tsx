@@ -97,7 +97,7 @@ export default function Contact() {
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6, delay: index * 0.1 + 0.2 }}
                 viewport={{ once: true }}
-                className="text-center bg-white/10 backdrop-blur-md rounded-xl p-8 hover:bg-white/20 transition-all duration-300 hover-lift border border-white/20"
+                className="text-center bg-white/5 backdrop-blur-sm rounded-lg p-6 hover:bg-white/10 transition-all duration-300 hover-lift border border-white/10"
               >
                 <div className="w-16 h-16 bg-red-600 rounded-full flex items-center justify-center mx-auto mb-6">
                   <item.icon className="h-8 w-8 text-white" />
