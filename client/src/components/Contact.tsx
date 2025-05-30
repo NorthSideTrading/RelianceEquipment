@@ -1,7 +1,7 @@
 import { Phone, MapPin, Clock, ExternalLink, AlertTriangle } from "lucide-react";
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
-import firetruckPanaImg from "@assets/firetruckpana.jpg";
+import firetruckPanaImg from "@assets/firetruckpana (1).jpg";
 
 export default function Contact() {
   const contactItems = [
