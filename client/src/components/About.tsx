@@ -1,6 +1,6 @@
 import { Award, Users, Phone } from "lucide-react";
 import { motion } from "framer-motion";
-import oldFiretruckImg from "@assets/oldfiretruck.jpg";
+import firetruck40yearImg from "@assets/firetruck40year.jpg";
 import firetruckBabyImg from "@assets/firetruckbaby.jpg";
 import axeWrenchSymbol from "@assets/AxeWrenchSymbol.png";
 
@@ -134,8 +134,8 @@ export default function About() {
             <div className="rounded-2xl overflow-hidden shadow-2xl hover-lift relative">
               <div className="absolute inset-0 bg-gradient-to-br from-red-600/10 to-transparent z-10"></div>
               <img 
-                src={oldFiretruckImg} 
-                alt="Vintage Bethel Fire Department Mack fire truck showcasing decades of firefighting heritage" 
+                src={firetruck40yearImg} 
+                alt="Classic red Litchfield Fire Department truck representing 40 years of reliable fire apparatus service" 
                 className="w-full h-80 object-cover transition-transform duration-700 hover:scale-105"
               />
               <div className="absolute bottom-4 left-4 z-20">
