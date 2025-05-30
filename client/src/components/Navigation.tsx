@@ -1,12 +1,13 @@
 import { useState, useEffect } from "react";
 import { Menu, X, Phone } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import { Link } from "wouter";
+import { Link, useLocation } from "wouter";
 import axeWrenchSymbol from '@assets/AxeWrenchSymbol.png';
 
 export default function Navigation() {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const [location] = useLocation();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -21,7 +22,11 @@ export default function Navigation() {
     { href: "/", label: "Home", isRoute: true },
     { href: "/services", label: "Services", isRoute: true },
     { href: "/gallery", label: "Gallery", isRoute: true },
-    { href: "#about", label: "About Us", isRoute: false }
+    { 
+      href: location === "/" ? "#about" : "/#about", 
+      label: "About Us", 
+      isRoute: location !== "/" 
+    }
   ];
 
   return (
