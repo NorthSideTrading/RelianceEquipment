@@ -7,8 +7,13 @@ export default function Hero() {
   return (
     <section 
       id="home" 
-      className="relative h-screen flex items-center justify-center overflow-hidden parallax"
-      style={{ backgroundImage: `url(${firetruckClassicImg})` }}
+      className="relative h-[75vh] flex items-center justify-center overflow-hidden"
+      style={{ 
+        backgroundImage: `url(${firetruckClassicImg})`,
+        backgroundSize: 'cover',
+        backgroundPosition: 'center center',
+        backgroundRepeat: 'no-repeat'
+      }}
     >
       {/* Overlay */}
       <div className="absolute inset-0 bg-gradient-to-r from-black/80 via-black/60 to-transparent"></div>
