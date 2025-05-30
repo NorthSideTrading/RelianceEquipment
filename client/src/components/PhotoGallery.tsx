@@ -8,7 +8,7 @@ import firetruckWater2Img from "@assets/firetruckwater2.jpg";
 import firetruckWaterImg from "@assets/firetruckwater.jpg";
 import firetruck2Img from "@assets/firetruck2.jpg";
 import firetruck1Img from "@assets/firetruck1.jpg";
-import firetruckBabyImg from "@assets/firetruckbaby.jpg";
+import firetruckWater3Img from "@assets/firetruckwater3.jpg";
 
 export default function PhotoGallery() {
   const [currentSlide, setCurrentSlide] = useState(0);
@@ -35,9 +35,9 @@ export default function PhotoGallery() {
       title: "Professional Service"
     },
     {
-      src: firetruckBabyImg,
-      alt: "Next generation at the fire station learning about fire equipment and safety",
-      title: "Future Generation"
+      src: firetruckWater3Img,
+      alt: "Fire truck spraying water with spectacular rainbow effect against blue sky",
+      title: "Rainbow Operations"
     }
   ];
 
