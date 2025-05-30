@@ -87,7 +87,7 @@ export default function About() {
             viewport={{ once: true }}
           >
             <div className="inline-flex items-center bg-red-50 border border-red-200 rounded-full px-6 py-2 mb-6">
-              <span className="text-red-600 font-mono text-sm font-semibold">EST. 1982</span>
+              <span className="text-red-600 font-mono text-sm font-bold">EST. 1982</span>
               <div className="w-2 h-2 bg-red-500 rounded-full ml-3 animate-pulse-slow"></div>
             </div>
             
@@ -159,7 +159,9 @@ export default function About() {
             <div className="md:col-span-2">
               <h3 className="text-3xl font-bold text-gray-900 mb-4"><span className="text-red-600">Family</span> Tradition Continues</h3>
               <p className="text-lg text-gray-600 mb-6">
-                Reliance Equipment isn't just a business—it's a family tradition of service to our community's first responders. 
+                <span className="bg-gradient-to-r from-yellow-400 to-yellow-500 px-2 py-1 border border-yellow-600 shadow-lg inline transform -skew-x-1">
+                  <span className="text-red-700 font-bold">RELIANCE EQUIPMENT</span>
+                </span> isn't just a business—it's a family tradition of service to our community's first responders. 
                 We take pride in the relationships we've built with fire departments throughout Maine over the past four decades.
               </p>
               <p className="text-gray-600">
