@@ -1,6 +1,6 @@
 import { Award, Users, Phone } from "lucide-react";
 import { motion } from "framer-motion";
-import firetruck1Img from "@assets/firetruck1.jpg";
+import oldFiretruckImg from "@assets/oldfiretruck.jpg";
 import firetruckBabyImg from "@assets/firetruckbaby.jpg";
 import CrossedAxeWrench from "./CrossedAxeWrench";
 
@@ -106,13 +106,13 @@ export default function About() {
             <div className="rounded-2xl overflow-hidden shadow-2xl hover-lift relative">
               <div className="absolute inset-0 bg-gradient-to-br from-red-600/10 to-transparent z-10"></div>
               <img 
-                src={firetruck1Img} 
-                alt="Falmouth West Station fire truck elevated for maintenance work in service bay" 
+                src={oldFiretruckImg} 
+                alt="Vintage Bethel Fire Department Mack fire truck showcasing decades of firefighting heritage" 
                 className="w-full h-64 object-cover transition-transform duration-700 hover:scale-105"
               />
               <div className="absolute bottom-4 left-4 z-20">
                 <div className="bg-black/50 backdrop-blur-sm text-white px-3 py-1 rounded-full text-sm">
-                  Expert Maintenance
+                  Heritage & Tradition
                 </div>
               </div>
             </div>
