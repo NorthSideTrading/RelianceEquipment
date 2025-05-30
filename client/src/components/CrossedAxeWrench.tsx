@@ -13,115 +13,78 @@ export default function CrossedAxeWrench({ className = "", size = 100 }: Crossed
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
-      {/* Firefighter Axe Handle */}
-      <rect
-        x="45"
-        y="45"
-        width="8"
-        height="110"
-        fill="#8B4513"
-        stroke="#654321"
-        strokeWidth="1"
-        transform="rotate(45 100 100)"
-        rx="4"
+      {/* Axe Handle */}
+      <line
+        x1="40"
+        y1="160"
+        x2="110"
+        y2="90"
+        stroke="#8B4513"
+        strokeWidth="8"
+        strokeLinecap="round"
       />
       
-      {/* Firefighter Axe Head */}
+      {/* Axe Head */}
       <path
-        d="M40 35 L65 35 L75 45 L75 55 L65 65 L40 65 L30 50 Z"
+        d="M115 85 L125 75 L140 80 L145 95 L135 105 L120 100 Z"
         fill="#DC2626"
         stroke="#991B1B"
         strokeWidth="2"
-        transform="rotate(45 100 100) translate(10, -10)"
       />
       
-      {/* Axe Blade Edge */}
+      {/* Axe Blade */}
       <path
-        d="M30 50 L40 35 L65 35 L75 45"
-        stroke="#EF4444"
-        strokeWidth="2"
-        fill="none"
-        transform="rotate(45 100 100) translate(10, -10)"
-      />
-      
-      {/* Axe Pick/Spike */}
-      <path
-        d="M75 45 L85 40 L90 50 L85 60 L75 55"
+        d="M120 100 L135 105 L145 95 L150 110 L125 120 Z"
         fill="#DC2626"
         stroke="#991B1B"
         strokeWidth="2"
-        transform="rotate(45 100 100) translate(10, -10)"
       />
       
-      {/* Mechanic's Wrench Handle */}
+      {/* Wrench Handle */}
+      <line
+        x1="160"
+        y1="40"
+        x2="90"
+        y2="110"
+        stroke="#6B7280"
+        strokeWidth="8"
+        strokeLinecap="round"
+      />
+      
+      {/* Wrench Head */}
       <rect
-        x="155"
-        y="45"
-        width="6"
-        height="110"
-        fill="#4B5563"
-        stroke="#374151"
-        strokeWidth="1"
-        transform="rotate(-45 100 100)"
-        rx="3"
-      />
-      
-      {/* Wrench Head (Open End) */}
-      <path
-        d="M145 35 L165 35 L165 42 L158 49 L152 49 L145 42 Z"
+        x="75"
+        y="115"
+        width="25"
+        height="15"
         fill="#6B7280"
         stroke="#374151"
         strokeWidth="2"
-        transform="rotate(-45 100 100) translate(10, -10)"
-      />
-      
-      {/* Wrench Opening/Jaw */}
-      <path
-        d="M152 42 L158 42 L158 49 L152 49"
-        fill="none"
-        stroke="#374151"
-        strokeWidth="1.5"
-        transform="rotate(-45 100 100) translate(10, -10)"
-      />
-      
-      {/* Wrench Box End */}
-      <rect
-        x="145"
-        y="55"
-        width="20"
-        height="12"
-        fill="#6B7280"
-        stroke="#374151"
-        strokeWidth="2"
-        transform="rotate(-45 100 100) translate(10, -10)"
         rx="2"
+        transform="rotate(-45 87.5 122.5)"
       />
       
-      {/* Wrench Box Opening (Hexagon) */}
-      <polygon
-        points="150,61 155,58 160,61 160,67 155,70 150,67"
+      {/* Wrench Opening */}
+      <rect
+        x="85"
+        y="120"
+        width="12"
+        height="8"
         fill="none"
         stroke="#374151"
-        strokeWidth="1.5"
-        transform="rotate(-45 100 100) translate(10, -10)"
+        strokeWidth="2"
+        rx="1"
+        transform="rotate(-45 91 124)"
       />
       
       {/* Center Binding */}
       <circle
         cx="100"
         cy="100"
-        r="12"
+        r="10"
         fill="#DC2626"
         stroke="#991B1B"
-        strokeWidth="3"
-      />
-      
-      {/* Center Detail */}
-      <circle
-        cx="100"
-        cy="100"
-        r="6"
-        fill="#EF4444"
+        strokeWidth="2"
       />
     </svg>
   );
