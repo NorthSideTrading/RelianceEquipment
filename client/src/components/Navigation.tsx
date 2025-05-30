@@ -1,7 +1,8 @@
 import { useState, useEffect } from "react";
-import { Wrench, Menu, X, Phone } from "lucide-react";
+import { Menu, X, Phone } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Link } from "wouter";
+import axeWrenchSymbol from '@assets/AxeWrenchSymbol.png';
 
 export default function Navigation() {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -33,8 +34,8 @@ export default function Navigation() {
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
           <div className="flex items-center space-x-3">
-            <div className="w-10 h-10 bg-red-600 rounded-full flex items-center justify-center">
-              <Wrench className="h-6 w-6 text-white" />
+            <div className="w-10 h-10 flex items-center justify-center">
+              <img src={axeWrenchSymbol} alt="Axe and Wrench Symbol" className="h-10 w-10 object-contain" />
             </div>
             <div>
               <div className="bg-gradient-to-r from-yellow-400 to-yellow-500 px-3 py-1 border-2 border-yellow-600 shadow-lg inline-block transform -skew-x-1">
@@ -42,7 +43,7 @@ export default function Navigation() {
                   RELIANCE EQUIPMENT
                 </h1>
               </div>
-              <p className="text-xs font-mono text-gray-600 mt-1">EST. 1982</p>
+              <p className="text-xs font-mono text-gray-600 mt-1 font-bold">EST. 1982</p>
             </div>
           </div>
 
