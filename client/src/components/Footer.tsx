@@ -1,5 +1,6 @@
-import { Wrench, Phone, MapPin, Clock, ExternalLink } from "lucide-react";
+import { Phone, MapPin, Clock, ExternalLink } from "lucide-react";
 import { motion } from "framer-motion";
+import axeWrenchSymbol from "@assets/AxeWrenchSymbol.png";
 
 export default function Footer() {
   const services = [
@@ -31,12 +32,14 @@ export default function Footer() {
               viewport={{ once: true }}
               className="flex items-center mb-6"
             >
-              <div className="w-10 h-10 bg-red-600 rounded-full flex items-center justify-center mr-4">
-                <Wrench className="h-6 w-6 text-white" />
+              <div className="w-12 h-12 flex items-center justify-center mr-4">
+                <img src={axeWrenchSymbol} alt="Axe and Wrench Symbol" className="h-12 w-12 object-contain" />
               </div>
               <div>
-                <h3 className="text-2xl font-black tracking-wider">RELIANCE EQUIPMENT</h3>
-                <p className="text-sm font-mono text-gray-400">EST. 1982</p>
+                <div className="bg-gradient-to-r from-yellow-400 to-yellow-500 px-3 py-1 border-2 border-yellow-600 shadow-lg inline-block transform -skew-x-1 mb-1">
+                  <h3 className="text-lg font-black text-red-700 tracking-wider">RELIANCE EQUIPMENT</h3>
+                </div>
+                <p className="text-sm font-mono text-gray-400 font-bold">EST. 1982</p>
               </div>
             </motion.div>
             
