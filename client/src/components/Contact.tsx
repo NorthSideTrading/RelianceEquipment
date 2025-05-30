@@ -78,12 +78,12 @@ export default function Contact() {
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
             viewport={{ once: true }}
-            className="text-center mb-16"
+            className="text-center mb-12"
           >
-            <h2 className="text-4xl md:text-5xl font-black text-white mb-4 tracking-wider text-shadow">
+            <h2 className="text-2xl md:text-3xl font-black text-white mb-3 tracking-wider text-shadow">
               Get In <span className="text-red-500">Touch</span>
             </h2>
-            <p className="text-xl text-gray-200 max-w-2xl mx-auto text-shadow">
+            <p className="text-sm text-gray-200 max-w-xl mx-auto text-shadow">
               Ready to schedule service or need emergency repairs? Our team is here to help 24/7.
             </p>
           </motion.div>
@@ -97,21 +97,21 @@ export default function Contact() {
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6, delay: index * 0.1 + 0.2 }}
                 viewport={{ once: true }}
-                className="text-center bg-white/5 backdrop-blur-sm rounded-lg p-6 hover:bg-white/10 transition-all duration-300 hover-lift border border-white/10"
+                className="text-center bg-white/5 backdrop-blur-sm rounded-lg p-4 hover:bg-white/10 transition-all duration-300 hover-lift border border-white/10"
               >
-                <div className="w-16 h-16 bg-red-600 rounded-full flex items-center justify-center mx-auto mb-6">
-                  <item.icon className="h-8 w-8 text-white" />
+                <div className="w-10 h-10 bg-red-600 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <item.icon className="h-5 w-5 text-white" />
                 </div>
-                <h3 className="text-2xl font-bold text-white mb-4 tracking-wider text-shadow">{item.title}</h3>
-                <p className="text-gray-200 mb-4 text-shadow">{item.subtitle}</p>
+                <h3 className="text-sm font-bold text-white mb-2 tracking-wider text-shadow">{item.title}</h3>
+                <p className="text-xs text-gray-200 mb-3 text-shadow">{item.subtitle}</p>
                 {item.href ? (
-                  <Button asChild variant="link" className="text-red-400 text-xl font-medium hover:text-white p-0">
+                  <Button asChild variant="link" className="text-red-400 text-sm font-medium hover:text-white p-0">
                     <a href={item.href} target={item.href.startsWith('http') ? '_blank' : undefined}>
                       {item.content}
                     </a>
                   </Button>
                 ) : (
-                  <p className="text-red-400 text-xl font-medium">{item.content}</p>
+                  <p className="text-red-400 text-sm font-medium">{item.content}</p>
                 )}
               </motion.div>
             ))}
