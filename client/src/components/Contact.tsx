@@ -1,4 +1,5 @@
-import { Phone, MapPin, Clock, ExternalLink, AlertTriangle } from "lucide-react";
+import { Phone, MapPin, Clock, AlertTriangle } from "lucide-react";
+import { FaFacebook } from "react-icons/fa";
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import firetruckPanaImg from "@assets/firetruckpana.jpg";
@@ -20,7 +21,7 @@ export default function Contact() {
       href: "https://maps.google.com/?q=Vassalboro,ME"
     },
     {
-      icon: ExternalLink,
+      icon: FaFacebook,
       title: "Follow Us",
       subtitle: "Stay updated on our services",
       content: "Facebook",
@@ -99,24 +100,20 @@ export default function Contact() {
                 viewport={{ once: true }}
                 className="text-center"
               >
-                <Button
-                  asChild
-                  size="lg"
-                  className="w-full bg-red-600 hover:bg-red-700 text-white px-8 py-8 text-lg font-bold hover-lift rounded-xl shadow-2xl border-2 border-red-500 hover:border-red-400 transition-all duration-300"
-                >
-                  <a href={item.href} target={item.href?.startsWith('http') ? '_blank' : undefined}>
-                    <div className="flex flex-col items-center space-y-3">
-                      <div className="w-12 h-12 bg-white/20 rounded-full flex items-center justify-center">
-                        <item.icon className="h-6 w-6 text-white" />
-                      </div>
-                      <div>
-                        <h3 className="text-xl font-bold tracking-wider mb-1">{item.title}</h3>
-                        <p className="text-sm text-red-100 mb-2">{item.subtitle}</p>
-                        <p className="text-lg font-semibold text-yellow-300">{item.content}</p>
-                      </div>
-                    </div>
+                <div className="flex flex-col items-center space-y-4">
+                  <a 
+                    href={item.href} 
+                    target={item.href?.startsWith('http') ? '_blank' : undefined}
+                    className="w-16 h-16 bg-white rounded-full flex items-center justify-center hover:bg-gray-100 transition-all duration-300 hover:scale-110 shadow-2xl"
+                  >
+                    <item.icon className="h-8 w-8 text-red-600" />
                   </a>
-                </Button>
+                  <div>
+                    <h3 className="text-xl font-bold text-white mb-1 tracking-wider text-shadow">{item.title}</h3>
+                    <p className="text-sm text-gray-200 mb-2 text-shadow">{item.subtitle}</p>
+                    <p className="text-lg font-semibold text-yellow-300 text-shadow">{item.content}</p>
+                  </div>
+                </div>
               </motion.div>
             ))}
           </div>
