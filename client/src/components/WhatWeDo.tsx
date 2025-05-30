@@ -1,6 +1,7 @@
 import { Check } from "lucide-react";
 import { motion } from "framer-motion";
 import tradeshowImg from "@assets/tradeshow.jpg";
+import CrossedAxeWrench from "./CrossedAxeWrench";
 
 export default function WhatWeDo() {
   const features = [
@@ -25,6 +26,18 @@ export default function WhatWeDo() {
         <div className="absolute top-20 left-10 w-32 h-32 bg-red-600 rounded-full blur-3xl"></div>
         <div className="absolute bottom-20 right-10 w-48 h-48 bg-yellow-400 rounded-full blur-3xl"></div>
         <div className="absolute top-1/2 left-1/3 w-24 h-24 bg-red-400 rounded-full blur-2xl"></div>
+      </div>
+      
+      {/* Crossed Axe and Wrench Logos */}
+      <div className="absolute inset-0 opacity-5">
+        <CrossedAxeWrench 
+          className="absolute top-16 right-16 text-red-600" 
+          size={120} 
+        />
+        <CrossedAxeWrench 
+          className="absolute bottom-16 left-16 text-red-400 transform rotate-45" 
+          size={80} 
+        />
       </div>
       
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">

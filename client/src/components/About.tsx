@@ -2,6 +2,7 @@ import { Award, Users, Phone } from "lucide-react";
 import { motion } from "framer-motion";
 import firetruck1Img from "@assets/firetruck1.jpg";
 import firetruckBabyImg from "@assets/firetruckbaby.jpg";
+import CrossedAxeWrench from "./CrossedAxeWrench";
 
 export default function About() {
   const highlights = [
@@ -29,6 +30,22 @@ export default function About() {
         <div className="absolute top-32 right-20 w-40 h-40 bg-red-500 rounded-full blur-3xl"></div>
         <div className="absolute bottom-32 left-20 w-36 h-36 bg-yellow-400 rounded-full blur-3xl"></div>
         <div className="absolute top-1/3 left-1/2 w-20 h-20 bg-red-300 rounded-full blur-2xl"></div>
+      </div>
+      
+      {/* Crossed Axe and Wrench Logos */}
+      <div className="absolute inset-0 opacity-4">
+        <CrossedAxeWrench 
+          className="absolute top-20 left-20 text-red-500" 
+          size={100} 
+        />
+        <CrossedAxeWrench 
+          className="absolute bottom-20 right-20 text-red-400 transform rotate-180" 
+          size={90} 
+        />
+        <CrossedAxeWrench 
+          className="absolute top-1/2 right-1/4 text-red-300 transform rotate-90" 
+          size={60} 
+        />
       </div>
       
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
