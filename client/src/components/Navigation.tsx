@@ -34,8 +34,8 @@ export default function Navigation() {
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
           <div className="flex items-center space-x-3">
-            <div className="w-15 h-15 flex items-center justify-center">
-              <img src={axeWrenchSymbol} alt="Axe and Wrench Symbol" className="h-15 w-15 object-contain" />
+            <div className="w-12 h-12 flex items-center justify-center">
+              <img src={axeWrenchSymbol} alt="Axe and Wrench Symbol" className="h-12 w-12 object-contain" />
             </div>
             <div>
               <div className="bg-gradient-to-r from-yellow-400 to-yellow-500 px-3 py-1 border-2 border-yellow-600 shadow-lg inline-block transform -skew-x-1">
