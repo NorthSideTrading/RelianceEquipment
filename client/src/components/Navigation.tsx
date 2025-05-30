@@ -19,6 +19,7 @@ export default function Navigation() {
   const navLinks = [
     { href: "/", label: "Home", isRoute: true },
     { href: "/services", label: "Services", isRoute: true },
+    { href: "/gallery", label: "Gallery", isRoute: true },
     { href: "#about", label: "About", isRoute: false }
   ];
 
