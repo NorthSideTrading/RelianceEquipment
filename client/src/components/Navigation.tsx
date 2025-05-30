@@ -37,10 +37,12 @@ export default function Navigation() {
               <Wrench className="h-6 w-6 text-white" />
             </div>
             <div>
-              <h1 className="text-xl font-black text-gray-900 tracking-wider">
-                RELIANCE EQUIPMENT
-              </h1>
-              <p className="text-xs font-mono text-gray-600">EST. 1982</p>
+              <div className="bg-gradient-to-r from-yellow-400 to-yellow-500 px-3 py-1 border-2 border-yellow-600 shadow-lg inline-block transform -skew-x-1">
+                <h1 className="text-lg font-black text-red-700 tracking-wider">
+                  RELIANCE EQUIPMENT
+                </h1>
+              </div>
+              <p className="text-xs font-mono text-gray-600 mt-1">EST. 1982</p>
             </div>
           </div>
 

@@ -43,12 +43,10 @@ export default function Hero() {
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.4, duration: 0.8 }}
-              className="text-5xl md:text-7xl font-black mb-6 leading-none tracking-wider"
+              className="text-5xl md:text-7xl font-black text-white mb-6 text-shadow leading-none tracking-wider"
             >
-              <div className="bg-gradient-to-r from-yellow-400 to-yellow-500 px-6 py-3 border-4 border-yellow-600 shadow-2xl inline-block transform -skew-x-1">
-                <span className="text-red-700 text-shadow-sm">RELIANCE</span><br />
-                <span className="text-red-700 text-shadow-sm">EQUIPMENT</span>
-              </div>
+              RELIANCE<br />
+              <span className="text-red-500">EQUIPMENT</span>
             </motion.h1>
 
             {/* Subtitle */}
