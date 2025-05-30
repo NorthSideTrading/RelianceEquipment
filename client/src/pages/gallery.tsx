@@ -51,11 +51,7 @@ const galleryImages = [
     title: "Classic Restoration",
     description: "Vintage fire truck on hydraulic lift for service"
   },
-  {
-    src: firetruckbaby,
-    title: "Compact Emergency Unit",
-    description: "Specialized compact fire response vehicle"
-  },
+
   {
     src: firetruckclassic,
     title: "Heritage Fire Engine",
@@ -86,11 +82,7 @@ const galleryImages = [
     title: "Firefighting Action",
     description: "Active firefighting and water operations"
   },
-  {
-    src: tradeshow,
-    title: "Trade Show Display",
-    description: "Showcasing equipment at industry events"
-  }
+
 ];
 
 export default function Gallery() {
