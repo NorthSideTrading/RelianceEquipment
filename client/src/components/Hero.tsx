@@ -86,7 +86,7 @@ export default function Hero() {
                 asChild
                 variant="outline"
                 size="lg"
-                className="bg-white/20 hover:bg-white/30 text-white border-white/30 px-8 py-4 text-lg font-bold hover-lift backdrop-blur-sm"
+                className="bg-yellow-500/20 hover:bg-yellow-500/30 text-yellow-200 border-yellow-400/50 px-8 py-4 text-lg font-bold hover-lift backdrop-blur-sm"
               >
                 <a href="#services">
                   <Eye className="h-5 w-5 mr-2" />
