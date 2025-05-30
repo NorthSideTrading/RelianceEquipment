@@ -3,7 +3,6 @@ import Navigation from "@/components/Navigation";
 import Hero from "@/components/Hero";
 import WhatWeDo from "@/components/WhatWeDo";
 import PhotoGallery from "@/components/PhotoGallery";
-import Services from "@/components/Services";
 import About from "@/components/About";
 import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
@@ -37,7 +36,6 @@ export default function Home() {
         <Hero />
         <WhatWeDo />
         <PhotoGallery />
-        <Services />
         <About />
         <Contact />
       </main>

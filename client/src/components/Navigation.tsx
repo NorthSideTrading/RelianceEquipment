@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import { Wrench, Menu, X, Phone } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { Link } from "wouter";
 
 export default function Navigation() {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -16,9 +17,9 @@ export default function Navigation() {
   }, []);
 
   const navLinks = [
-    { href: "#home", label: "Home" },
-    { href: "#services", label: "Services" },
-    { href: "#about", label: "About" }
+    { href: "/", label: "Home", isRoute: true },
+    { href: "/services", label: "Services", isRoute: true },
+    { href: "#about", label: "About", isRoute: false }
   ];
 
   return (
@@ -45,13 +46,23 @@ export default function Navigation() {
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center space-x-8">
             {navLinks.map((link) => (
-              <a
-                key={link.href}
-                href={link.href}
-                className="text-gray-700 hover:text-red-600 px-3 py-2 text-sm font-semibold transition-colors duration-200"
-              >
-                {link.label}
-              </a>
+              link.isRoute ? (
+                <Link
+                  key={link.href}
+                  href={link.href}
+                  className="text-gray-700 hover:text-red-600 px-3 py-2 text-sm font-semibold transition-colors duration-200"
+                >
+                  {link.label}
+                </Link>
+              ) : (
+                <a
+                  key={link.href}
+                  href={link.href}
+                  className="text-gray-700 hover:text-red-600 px-3 py-2 text-sm font-semibold transition-colors duration-200"
+                >
+                  {link.label}
+                </a>
+              )
             ))}
             <Button 
               asChild 
@@ -84,14 +95,25 @@ export default function Navigation() {
           <div className="md:hidden bg-white border-t border-gray-200">
             <div className="px-4 py-3 space-y-3">
               {navLinks.map((link) => (
-                <a
-                  key={link.href}
-                  href={link.href}
-                  className="block text-gray-700 hover:text-red-600 font-semibold py-2"
-                  onClick={() => setIsMobileMenuOpen(false)}
-                >
-                  {link.label}
-                </a>
+                link.isRoute ? (
+                  <Link
+                    key={link.href}
+                    href={link.href}
+                    className="block text-gray-700 hover:text-red-600 font-semibold py-2"
+                    onClick={() => setIsMobileMenuOpen(false)}
+                  >
+                    {link.label}
+                  </Link>
+                ) : (
+                  <a
+                    key={link.href}
+                    href={link.href}
+                    className="block text-gray-700 hover:text-red-600 font-semibold py-2"
+                    onClick={() => setIsMobileMenuOpen(false)}
+                  >
+                    {link.label}
+                  </a>
+                )
               ))}
               <Button 
                 asChild 
