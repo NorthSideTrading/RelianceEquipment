@@ -28,12 +28,12 @@ export default function WhatWeDo() {
         <div className="absolute top-1/2 left-1/3 w-24 h-24 bg-red-400 rounded-full blur-2xl"></div>
       </div>
       
-      {/* Large Background Symbol behind text - centered */}
+      {/* Large Background Symbol behind text - centered over text content */}
       <div className="absolute inset-0 opacity-3 z-0">
         <img 
           src={axeWrenchSymbol} 
           alt="" 
-          className="absolute top-1/2 left-1/2 w-144 h-144 opacity-40 transform -translate-x-1/2 -translate-y-1/2 rotate-15" 
+          className="absolute top-1/2 left-1/4 w-144 h-144 opacity-40 transform -translate-y-1/2 rotate-15" 
           style={{ width: '36rem', height: '36rem' }}
         />
       </div>
