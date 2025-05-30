@@ -23,8 +23,15 @@ export default function About() {
   ];
 
   return (
-    <section id="about" className="py-20 bg-white">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <section id="about" className="py-20 bg-gradient-to-br from-white via-gray-50 to-white relative overflow-hidden">
+      {/* Background decorative elements */}
+      <div className="absolute inset-0 opacity-3">
+        <div className="absolute top-32 right-20 w-40 h-40 bg-red-500 rounded-full blur-3xl"></div>
+        <div className="absolute bottom-32 left-20 w-36 h-36 bg-yellow-400 rounded-full blur-3xl"></div>
+        <div className="absolute top-1/3 left-1/2 w-20 h-20 bg-red-300 rounded-full blur-2xl"></div>
+      </div>
+      
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         {/* Main Content */}
         <div className="grid lg:grid-cols-2 gap-16 items-center mb-20">
           {/* Content */}
@@ -79,12 +86,18 @@ export default function About() {
             viewport={{ once: true }}
             className="space-y-8"
           >
-            <div className="rounded-2xl overflow-hidden shadow-2xl hover-lift">
+            <div className="rounded-2xl overflow-hidden shadow-2xl hover-lift relative">
+              <div className="absolute inset-0 bg-gradient-to-br from-red-600/10 to-transparent z-10"></div>
               <img 
                 src={firetruck1Img} 
                 alt="Falmouth West Station fire truck elevated for maintenance work in service bay" 
-                className="w-full h-64 object-cover"
+                className="w-full h-64 object-cover transition-transform duration-700 hover:scale-105"
               />
+              <div className="absolute bottom-4 left-4 z-20">
+                <div className="bg-black/50 backdrop-blur-sm text-white px-3 py-1 rounded-full text-sm">
+                  Expert Maintenance
+                </div>
+              </div>
             </div>
           </motion.div>
         </div>
@@ -95,7 +108,7 @@ export default function About() {
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
           viewport={{ once: true }}
-          className="bg-gray-50 rounded-3xl p-8 md:p-12"
+          className="bg-gradient-to-r from-gray-50 to-gray-100 rounded-3xl p-8 md:p-12 border border-gray-200 shadow-lg"
         >
           <div className="grid md:grid-cols-3 gap-8 items-center">
             <div className="md:col-span-2">

@@ -19,8 +19,15 @@ export default function WhatWeDo() {
   ];
 
   return (
-    <section className="py-20 bg-gray-50">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <section className="py-20 bg-gradient-to-br from-gray-50 via-white to-gray-100 relative overflow-hidden">
+      {/* Background decorative elements */}
+      <div className="absolute inset-0 opacity-5">
+        <div className="absolute top-20 left-10 w-32 h-32 bg-red-600 rounded-full blur-3xl"></div>
+        <div className="absolute bottom-20 right-10 w-48 h-48 bg-yellow-400 rounded-full blur-3xl"></div>
+        <div className="absolute top-1/2 left-1/3 w-24 h-24 bg-red-400 rounded-full blur-2xl"></div>
+      </div>
+      
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           {/* Content */}
           <motion.div
@@ -67,12 +74,18 @@ export default function WhatWeDo() {
             viewport={{ once: true }}
             className="relative"
           >
-            <div className="rounded-2xl overflow-hidden shadow-2xl hover-lift">
+            <div className="rounded-2xl overflow-hidden shadow-2xl hover-lift relative">
+              <div className="absolute inset-0 bg-gradient-to-tr from-red-600/20 to-transparent z-10"></div>
               <img 
                 src={tradeshowImg} 
                 alt="Reliance Equipment trade show display with fire apparatus repair tools and equipment" 
-                className="w-full h-auto object-cover"
+                className="w-full h-auto object-cover transition-transform duration-700 hover:scale-105"
               />
+              <div className="absolute top-4 right-4 z-20">
+                <div className="bg-red-600 text-white px-3 py-1 rounded-full text-sm font-semibold">
+                  Professional Service
+                </div>
+              </div>
             </div>
           </motion.div>
         </div>
