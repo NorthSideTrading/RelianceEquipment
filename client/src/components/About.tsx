@@ -49,6 +49,31 @@ export default function About() {
           alt="" 
           className="absolute top-1/2 right-1/4 w-12 h-12 opacity-20 transform rotate-90" 
         />
+        <img 
+          src={axeWrenchSymbol} 
+          alt="" 
+          className="absolute top-1/4 left-1/2 w-10 h-10 opacity-25 transform rotate-45" 
+        />
+        <img 
+          src={axeWrenchSymbol} 
+          alt="" 
+          className="absolute bottom-1/3 left-1/3 w-8 h-8 opacity-15 transform rotate-135" 
+        />
+        <img 
+          src={axeWrenchSymbol} 
+          alt="" 
+          className="absolute top-2/3 left-16 w-14 h-14 opacity-20 transform rotate-270" 
+        />
+        <img 
+          src={axeWrenchSymbol} 
+          alt="" 
+          className="absolute bottom-1/4 right-1/3 w-6 h-6 opacity-18 transform rotate-30" 
+        />
+        <img 
+          src={axeWrenchSymbol} 
+          alt="" 
+          className="absolute top-3/4 right-16 w-8 h-8 opacity-22 transform rotate-60" 
+        />
       </div>
       
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">

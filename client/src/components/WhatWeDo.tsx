@@ -40,6 +40,31 @@ export default function WhatWeDo() {
           alt="" 
           className="absolute bottom-16 left-16 w-16 h-16 opacity-30 transform rotate-45" 
         />
+        <img 
+          src={axeWrenchSymbol} 
+          alt="" 
+          className="absolute top-32 left-1/3 w-12 h-12 opacity-20 transform rotate-12" 
+        />
+        <img 
+          src={axeWrenchSymbol} 
+          alt="" 
+          className="absolute bottom-32 right-1/3 w-14 h-14 opacity-25 transform rotate-90" 
+        />
+        <img 
+          src={axeWrenchSymbol} 
+          alt="" 
+          className="absolute top-2/3 right-20 w-10 h-10 opacity-15 transform rotate-180" 
+        />
+        <img 
+          src={axeWrenchSymbol} 
+          alt="" 
+          className="absolute bottom-1/3 left-1/4 w-8 h-8 opacity-20 transform rotate-270" 
+        />
+        <img 
+          src={axeWrenchSymbol} 
+          alt="" 
+          className="absolute top-1/4 right-1/2 w-6 h-6 opacity-15 transform rotate-30" 
+        />
       </div>
       
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
