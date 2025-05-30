@@ -108,7 +108,7 @@ export default function About() {
               <img 
                 src={oldFiretruckImg} 
                 alt="Vintage Bethel Fire Department Mack fire truck showcasing decades of firefighting heritage" 
-                className="w-full h-64 object-cover transition-transform duration-700 hover:scale-105"
+                className="w-full h-80 object-cover transition-transform duration-700 hover:scale-105"
               />
               <div className="absolute bottom-4 left-4 z-20">
                 <div className="bg-black/50 backdrop-blur-sm text-white px-3 py-1 rounded-full text-sm">
