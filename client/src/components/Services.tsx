@@ -1,6 +1,6 @@
 import { Wrench, Droplets, Zap, Settings, Clock, ShieldCheck } from "lucide-react";
 import { motion } from "framer-motion";
-import CrossedAxeWrench from "@/components/CrossedAxeWrench";
+import axeWrenchSymbol from '@assets/AxeWrenchSymbol.png';
 
 export default function Services() {
   const services = [
@@ -46,12 +46,12 @@ export default function Services() {
     <section id="services" className="py-20 bg-gray-50 relative overflow-hidden">
       {/* Background Decorative Symbols */}
       <div className="absolute inset-0 pointer-events-none">
-        <CrossedAxeWrench className="absolute top-20 left-10 opacity-5 text-gray-400" size={120} />
-        <CrossedAxeWrench className="absolute top-40 right-20 opacity-5 text-gray-400" size={80} />
-        <CrossedAxeWrench className="absolute top-96 left-1/4 opacity-5 text-gray-400" size={100} />
-        <CrossedAxeWrench className="absolute bottom-40 right-10 opacity-5 text-gray-400" size={140} />
-        <CrossedAxeWrench className="absolute bottom-20 left-1/3 opacity-5 text-gray-400" size={90} />
-        <CrossedAxeWrench className="absolute top-1/2 right-1/4 opacity-5 text-gray-400" size={110} />
+        <img src={axeWrenchSymbol} alt="" className="absolute top-20 left-10 opacity-5 w-32 h-32" />
+        <img src={axeWrenchSymbol} alt="" className="absolute top-40 right-20 opacity-5 w-20 h-20" />
+        <img src={axeWrenchSymbol} alt="" className="absolute top-96 left-1/4 opacity-5 w-28 h-28" />
+        <img src={axeWrenchSymbol} alt="" className="absolute bottom-40 right-10 opacity-5 w-36 h-36" />
+        <img src={axeWrenchSymbol} alt="" className="absolute bottom-20 left-1/3 opacity-5 w-24 h-24" />
+        <img src={axeWrenchSymbol} alt="" className="absolute top-1/2 right-1/4 opacity-5 w-28 h-28" />
       </div>
       
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">

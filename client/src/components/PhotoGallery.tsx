@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { motion, AnimatePresence } from "framer-motion";
-import CrossedAxeWrench from "@/components/CrossedAxeWrench";
+import axeWrenchSymbol from '@assets/AxeWrenchSymbol.png';
 
 // Import all fire truck images
 import firetruckWater2Img from "@assets/firetruckwater2.jpg";
@@ -66,11 +66,11 @@ export default function PhotoGallery() {
     <section className="py-20 bg-white relative overflow-hidden">
       {/* Background Decorative Symbols */}
       <div className="absolute inset-0 pointer-events-none">
-        <CrossedAxeWrench className="absolute top-16 left-8 opacity-3 text-gray-300" size={100} />
-        <CrossedAxeWrench className="absolute top-32 right-16 opacity-3 text-gray-300" size={70} />
-        <CrossedAxeWrench className="absolute bottom-32 left-20 opacity-3 text-gray-300" size={130} />
-        <CrossedAxeWrench className="absolute bottom-16 right-8 opacity-3 text-gray-300" size={85} />
-        <CrossedAxeWrench className="absolute top-1/3 left-1/2 opacity-3 text-gray-300" size={95} />
+        <img src={axeWrenchSymbol} alt="" className="absolute top-16 left-8 opacity-3 w-28 h-28" />
+        <img src={axeWrenchSymbol} alt="" className="absolute top-32 right-16 opacity-3 w-20 h-20" />
+        <img src={axeWrenchSymbol} alt="" className="absolute bottom-32 left-20 opacity-3 w-36 h-36" />
+        <img src={axeWrenchSymbol} alt="" className="absolute bottom-16 right-8 opacity-3 w-24 h-24" />
+        <img src={axeWrenchSymbol} alt="" className="absolute top-1/3 left-1/2 opacity-3 w-24 h-24" />
       </div>
       
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
