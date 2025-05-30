@@ -1,6 +1,6 @@
 import { Check } from "lucide-react";
 import { motion } from "framer-motion";
-import tradeshowImg from "@assets/tradeshow.jpg";
+import firetruckServiceImg from "@assets/firetruckservice.jpg";
 import axeWrenchSymbol from "@assets/AxeWrenchSymbol.png";
 
 export default function WhatWeDo() {
@@ -107,8 +107,8 @@ export default function WhatWeDo() {
             <div className="rounded-2xl overflow-hidden shadow-2xl hover-lift relative">
               <div className="absolute inset-0 bg-gradient-to-tr from-red-600/20 to-transparent z-10"></div>
               <img 
-                src={tradeshowImg} 
-                alt="Reliance Equipment trade show display with fire apparatus repair tools and equipment" 
+                src={firetruckServiceImg} 
+                alt="Fire truck on hydraulic lift in professional service bay showing comprehensive repair capabilities" 
                 className="w-full h-auto object-cover transition-transform duration-700 hover:scale-105"
               />
               <div className="absolute top-4 right-4 z-20">
