@@ -1,5 +1,6 @@
 import Navigation from "@/components/Navigation";
 import Services from "@/components/Services";
+import PhotoGallery from "@/components/PhotoGallery";
 import Footer from "@/components/Footer";
 
 export default function ServicesPage() {
@@ -8,6 +9,7 @@ export default function ServicesPage() {
       <Navigation />
       <main className="pt-16">
         <Services />
+        <PhotoGallery />
       </main>
       <Footer />
     </div>
