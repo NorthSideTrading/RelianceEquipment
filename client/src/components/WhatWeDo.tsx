@@ -33,7 +33,7 @@ export default function WhatWeDo() {
         <img 
           src={axeWrenchSymbol} 
           alt="" 
-          className="absolute top-1/2 left-16 w-80 h-80 opacity-40 transform -translate-y-1/2 rotate-15" 
+          className="absolute top-1/2 left-16 w-96 h-96 opacity-40 transform -translate-y-1/2 rotate-15" 
         />
       </div>
       
