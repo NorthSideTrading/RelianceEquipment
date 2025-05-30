@@ -28,86 +28,56 @@ export default function WhatWeDo() {
         <div className="absolute top-1/2 left-1/3 w-24 h-24 bg-red-400 rounded-full blur-2xl"></div>
       </div>
       
-      {/* Large Background Symbol */}
-      <div className="absolute inset-0 opacity-5">
+      {/* Large Background Symbol behind text */}
+      <div className="absolute inset-0 opacity-3 z-0">
         <img 
           src={axeWrenchSymbol} 
           alt="" 
-          className="absolute top-1/2 left-1/4 w-96 h-96 opacity-30 transform -translate-y-1/2 rotate-12" 
+          className="absolute top-1/2 left-16 w-80 h-80 opacity-40 transform -translate-y-1/2 rotate-15" 
         />
       </div>
       
-      {/* Axe and Wrench Symbols */}
-      <div className="absolute inset-0 opacity-10">
+      {/* Smaller scattered symbols with proper spacing */}
+      <div className="absolute inset-0 opacity-8 z-0">
         <img 
           src={axeWrenchSymbol} 
           alt="" 
-          className="absolute top-16 right-16 w-24 h-24 opacity-50" 
+          className="absolute top-16 right-16 w-16 h-16 opacity-30 transform rotate-30" 
         />
         <img 
           src={axeWrenchSymbol} 
           alt="" 
-          className="absolute bottom-16 left-16 w-16 h-16 opacity-30 transform rotate-45" 
+          className="absolute bottom-16 left-96 w-12 h-12 opacity-25 transform rotate-60" 
         />
         <img 
           src={axeWrenchSymbol} 
           alt="" 
-          className="absolute top-32 left-1/3 w-12 h-12 opacity-20 transform rotate-12" 
+          className="absolute top-32 right-32 w-8 h-8 opacity-20 transform rotate-90" 
         />
         <img 
           src={axeWrenchSymbol} 
           alt="" 
-          className="absolute bottom-32 right-1/3 w-14 h-14 opacity-25 transform rotate-90" 
+          className="absolute bottom-32 right-48 w-10 h-10 opacity-22 transform rotate-120" 
         />
         <img 
           src={axeWrenchSymbol} 
           alt="" 
-          className="absolute top-2/3 right-20 w-10 h-10 opacity-15 transform rotate-180" 
+          className="absolute top-48 right-64 w-6 h-6 opacity-18 transform rotate-150" 
         />
         <img 
           src={axeWrenchSymbol} 
           alt="" 
-          className="absolute bottom-1/3 left-1/4 w-8 h-8 opacity-20 transform rotate-270" 
+          className="absolute bottom-48 left-80 w-8 h-8 opacity-24 transform rotate-180" 
         />
         <img 
           src={axeWrenchSymbol} 
           alt="" 
-          className="absolute top-1/4 right-1/2 w-6 h-6 opacity-15 transform rotate-30" 
+          className="absolute top-64 right-80 w-10 h-10 opacity-16 transform rotate-210" 
         />
         <img 
           src={axeWrenchSymbol} 
           alt="" 
-          className="absolute top-3/4 left-1/2 w-10 h-10 opacity-18 transform rotate-60" 
-        />
-        <img 
-          src={axeWrenchSymbol} 
-          alt="" 
-          className="absolute bottom-1/4 right-1/4 w-8 h-8 opacity-22 transform rotate-120" 
-        />
-        <img 
-          src={axeWrenchSymbol} 
-          alt="" 
-          className="absolute top-1/3 left-12 w-12 h-12 opacity-16 transform rotate-15" 
-        />
-        <img 
-          src={axeWrenchSymbol} 
-          alt="" 
-          className="absolute bottom-2/3 right-12 w-6 h-6 opacity-20 transform rotate-75" 
-        />
-        <img 
-          src={axeWrenchSymbol} 
-          alt="" 
-          className="absolute top-1/2 left-10 w-8 h-8 opacity-14 transform rotate-105" 
-        />
-        <img 
-          src={axeWrenchSymbol} 
-          alt="" 
-          className="absolute bottom-1/2 right-1/6 w-10 h-10 opacity-17 transform rotate-150" 
-        />
-        <img 
-          src={axeWrenchSymbol} 
-          alt="" 
-          className="absolute top-20 left-1/4 w-6 h-6 opacity-19 transform rotate-210" 
+          className="absolute bottom-64 right-96 w-6 h-6 opacity-20 transform rotate-240" 
         />
       </div>
       
