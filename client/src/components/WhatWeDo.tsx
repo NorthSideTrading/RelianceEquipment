@@ -28,12 +28,12 @@ export default function WhatWeDo() {
         <div className="absolute top-1/2 left-1/3 w-24 h-24 bg-red-400 rounded-full blur-2xl"></div>
       </div>
       
-      {/* Large Background Symbol behind text */}
+      {/* Large Background Symbol behind text - centered */}
       <div className="absolute inset-0 opacity-3 z-0">
         <img 
           src={axeWrenchSymbol} 
           alt="" 
-          className="absolute top-1/2 left-16 w-144 h-144 opacity-40 transform -translate-y-1/2 rotate-15" 
+          className="absolute top-1/2 left-1/2 w-144 h-144 opacity-40 transform -translate-x-1/2 -translate-y-1/2 rotate-15" 
           style={{ width: '36rem', height: '36rem' }}
         />
       </div>
@@ -48,37 +48,12 @@ export default function WhatWeDo() {
         <img 
           src={axeWrenchSymbol} 
           alt="" 
-          className="absolute bottom-16 left-96 w-12 h-12 opacity-25 transform rotate-60" 
-        />
-        <img 
-          src={axeWrenchSymbol} 
-          alt="" 
-          className="absolute top-32 right-32 w-8 h-8 opacity-20 transform rotate-90" 
-        />
-        <img 
-          src={axeWrenchSymbol} 
-          alt="" 
           className="absolute bottom-32 right-48 w-10 h-10 opacity-22 transform rotate-120" 
         />
         <img 
           src={axeWrenchSymbol} 
           alt="" 
-          className="absolute top-48 right-64 w-6 h-6 opacity-18 transform rotate-150" 
-        />
-        <img 
-          src={axeWrenchSymbol} 
-          alt="" 
-          className="absolute bottom-48 left-80 w-8 h-8 opacity-24 transform rotate-180" 
-        />
-        <img 
-          src={axeWrenchSymbol} 
-          alt="" 
           className="absolute top-64 right-80 w-10 h-10 opacity-16 transform rotate-210" 
-        />
-        <img 
-          src={axeWrenchSymbol} 
-          alt="" 
-          className="absolute bottom-64 right-96 w-6 h-6 opacity-20 transform rotate-240" 
         />
       </div>
       
