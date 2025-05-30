@@ -2,7 +2,7 @@ import { Award, Users, Phone } from "lucide-react";
 import { motion } from "framer-motion";
 import oldFiretruckImg from "@assets/oldfiretruck.jpg";
 import firetruckBabyImg from "@assets/firetruckbaby.jpg";
-import CrossedAxeWrench from "./CrossedAxeWrench";
+import axeWrenchSymbol from "@assets/AxeWrenchSymbol.png";
 
 export default function About() {
   const highlights = [
@@ -32,19 +32,22 @@ export default function About() {
         <div className="absolute top-1/3 left-1/2 w-20 h-20 bg-red-300 rounded-full blur-2xl"></div>
       </div>
       
-      {/* Crossed Axe and Wrench Logos */}
-      <div className="absolute inset-0 opacity-4">
-        <CrossedAxeWrench 
-          className="absolute top-20 left-20 text-red-500" 
-          size={100} 
+      {/* Axe and Wrench Symbols */}
+      <div className="absolute inset-0 opacity-8">
+        <img 
+          src={axeWrenchSymbol} 
+          alt="" 
+          className="absolute top-20 left-20 w-20 h-20 opacity-40" 
         />
-        <CrossedAxeWrench 
-          className="absolute bottom-20 right-20 text-red-400 transform rotate-180" 
-          size={90} 
+        <img 
+          src={axeWrenchSymbol} 
+          alt="" 
+          className="absolute bottom-20 right-20 w-18 h-18 opacity-30 transform rotate-180" 
         />
-        <CrossedAxeWrench 
-          className="absolute top-1/2 right-1/4 text-red-300 transform rotate-90" 
-          size={60} 
+        <img 
+          src={axeWrenchSymbol} 
+          alt="" 
+          className="absolute top-1/2 right-1/4 w-12 h-12 opacity-20 transform rotate-90" 
         />
       </div>
       
